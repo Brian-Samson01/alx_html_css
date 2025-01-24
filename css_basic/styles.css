@@ -1,46 +1,93 @@
-/* Apply flex display to body and main */
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Flexbox Layout */
 body {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
 }
 
 main {
     display: flex;
-    flex-direction: row;
     flex: auto;
+    flex-direction: row;
 }
 
-/* Set proportions for article and aside */
+/* Ensure proper sizing for article and aside */
 article {
     flex: 2;
     overflow-y: auto;
+    background: #fff;
     padding: 20px;
-    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 aside {
     flex: 1;
     overflow-y: auto;
+    background: #f9f9f9;
     padding: 20px;
-    background-color: #ddd;
 }
 
-/* Header and footer styling */
-header, footer {
+/* Header styling */
+header {
+    background: linear-gradient(to right, #333, #555);
+    color: white;
+    padding: 40px 20px 20px;  /* Added padding to avoid content overlap */
+    text-align: center;
+    position: relative; /* Ensure it doesn't overlap content */
+    z-index: 10;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;  /* Added margin to separate links */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 20; /* Ensure it's above other content */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    background: #FF5733;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: #C70039;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #FF5733;
+}
+
+/* Footer styling */
+footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
-}
-
-/* Ensure basic layout appearance */
-header {
-    flex: none;
-}
-
-footer {
-    flex: none;
+    padding: 10px;
 }
