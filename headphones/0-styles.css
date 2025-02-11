@@ -1,18 +1,23 @@
-body {
-    background-image: url(assets/headphones_hero_1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-/* General Header Styling */
+
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background: transparent;
+    position: absolute;
+    width: 100%;
 }
 
-/* Logo Styling */
+/* Logo */
 .logo {
     display: flex;
     align-items: center;
@@ -26,8 +31,7 @@ header {
     margin-right: 10px;
 }
 
-
-/* Desktop Navigation (Always Visible) */
+/* Desktop Navigation */
 .desktop-nav .nav-links {
     display: flex;
     gap: 20px;
@@ -52,7 +56,7 @@ header {
     color: white;
     font-size: 24px;
     cursor: pointer;
-    display: none; /* Hidden by default */
+    display: none;
 }
 
 /* Mobile Menu */
@@ -60,7 +64,7 @@ header {
     position: relative;
 }
 
-/* Dropdown Navigation (Initially Hidden) */
+/* Dropdown Navigation */
 .dropdown-nav {
     display: none;
     position: absolute;
@@ -71,19 +75,62 @@ header {
     border-radius: 5px;
 }
 
-/* Show menu when checkbox is checked */
 #menu-toggle:checked ~ .dropdown-nav {
     display: block;
 }
 
-/* Mobile Responsiveness */
+/* Hero Section */
+.hero {
+    background: url('assets/headphones_hero_1.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff4d4d;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Responsive Hero Image */
+@media screen and (max-width: 1024px) {
+    .hero {
+        background: url('assets/headphones_hero_1.jpg') no-repeat center center/cover;
+    }
+}
+
 @media screen and (max-width: 768px) {
-    /* Hide desktop navigation on mobile */
+    .hero {
+        background: url('assets/headphones_hero_1.jpg') no-repeat center center/cover;
+    }
+
     .desktop-nav {
         display: none;
     }
 
-    /* Show hamburger menu */
     .hamburger-menu {
         display: block;
     }
