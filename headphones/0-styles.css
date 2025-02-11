@@ -1,0 +1,90 @@
+body {
+    background-image: url(assets/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* General Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: transparent;
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+/* Desktop Navigation (Always Visible) */
+.desktop-nav .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.desktop-nav .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Hide checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Hamburger Icon (Hidden on Desktop) */
+.hamburger-menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+}
+
+/* Mobile Menu */
+.menu-container {
+    position: relative;
+}
+
+/* Dropdown Navigation (Initially Hidden) */
+.dropdown-nav {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Show menu when checkbox is checked */
+#menu-toggle:checked ~ .dropdown-nav {
+    display: block;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    /* Hide desktop navigation on mobile */
+    .desktop-nav {
+        display: none;
+    }
+
+    /* Show hamburger menu */
+    .hamburger-menu {
+        display: block;
+    }
+}
