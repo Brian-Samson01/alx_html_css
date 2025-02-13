@@ -150,6 +150,11 @@
   .feature-item {
     text-align: center;
     max-width: 200px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .feature-item:hover {
+    transform: scale(1.1);
   }
   
   .feature-item i {
@@ -162,12 +167,23 @@
     font-size: 1.2rem;
     margin-bottom: 5px;
   }
-  
+
   /* Our Results Section */
   .our-results {
-    padding: 60px 0;
-    color: white;
     text-align: center;
+    padding: 50px 20px;
+    color: white;
+  }
+  
+  .our-results h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .our-results p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 1rem;
   }
   
   .results-grid {
@@ -182,6 +198,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .result-item:hover {
+    transform: translateY(-10px);
   }
   
   .pentagon {
@@ -193,25 +214,37 @@
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 0.5rem;
+    font-size: 1rem;
     font-weight: bold;
-    background: #ff4d4d;
-    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    background: url(assets/pentagone.png) no-repeat center center/cover !important;
   }
   
   .pentagon-text {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     align-content: center;
   }
   
   .result-title {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     margin-top: 10px;
   }
 
-  /* contact us section */
-  .contact-us {
+  /* Animation for Our Results */
+  .pentagon:hover {
+    animation: bounce 0.5s ease-in-out;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+/* contact us section */
+.contact-us {
     padding: 60px 0;
     text-align: center;
     background: #fff;
@@ -304,15 +337,14 @@
     font-size: 14px;
     margin-top: 15px;
 }
-
  /* Responsive Design */
  @media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
   }
-}
   
   /* Responsive Hero Background */
   @media screen and (max-width: 1024px) {
