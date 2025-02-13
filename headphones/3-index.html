@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Headphones</title>
+  <link rel="stylesheet" href="holberton_school-icon/style.css">
+  <link rel="stylesheet" href="3-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Link to the Holberton icons CSS file extracted from the archive -->
+  
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="assets/logo_headphones.png" alt="Headphones Logo">
+    </div>
+    <!-- Desktop Navigation (Always Visible) -->
+    <nav class="desktop-nav">
+      <ul class="nav-links">
+        <li style="margin-left: 400px;"><a href="#what-we-do">what we do</a></li>
+        <li><a href="#">our results</a></li>
+        <li><a href="#">contact us</a></li>
+      </ul>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="menu-container">
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger-menu">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <nav class="dropdown-nav">
+        <ul class="nav-links">
+          <li><a href="#what-we-do">what we do</a></li>
+          <li><a href="#">our results</a></li>
+          <li><a href="#">contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+      <p>Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+      <a href="#" class="cta-button">CALL TO ACTION</a>
+    </div>
+  </section>
+
+  <!-- What We Do Section -->
+  <section id="what-we-do" class="what-we-do">
+    <h2>What we do...</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="features">
+      <div class="feature-item">
+        <!-- Using Holberton icon for sound (class name as defined in holberton-icons.css) -->
+        <i class="holberton_school-icon-ic_sound"></i>
+        <h3>High Quality Sound</h3>
+        <p>Experience premium audio clarity with our advanced technology.</p>
+      </div>
+      <div class="feature-item">
+        <!-- Using Holberton icon for movie --> 
+        <i class="holberton_school-icon-ic_video"></i>
+        <h3>Immersive Experience</h3>
+        <p>Enjoy an immersive experience with our cutting-edge design.</p>
+      </div>
+      <div class="feature-item">
+        <!-- Using Holberton icon for music --> 
+        <i class="holberton_school-icon-ic_music"></i>
+        <h3>Dynamic Beats</h3>
+        <p>Feel the rhythm with dynamic beats and powerful bass.</p>
+      </div>
+      <div class="feature-item">
+        <!-- Using Holberton icon for hearing --> 
+        <i class="holberton_school-icon-ic_hearing"></i>
+        <h3>Crisp Audio</h3>
+        <p>Enjoy crystal-clear sound quality in every note.</p>
+      </div>
+    </div>
+  </section>
+  <section class="our-results" style="background-image: url(assets/headphones_hero_2.jpg);">
+    <div class="container">
+        <h2 class="section-title">Our results speak for themselves</h2>
+        <p class="section-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+        <div class="results-grid">
+            <div class="result-item">
+                <div class="pentagon">
+                    <span class="pentagon-text">+2%</span>
+                    <p class="result-title">Lorem ipsum dolor</p>
+                </div>
+            </div>
+            <div class="result-item">
+                <div class="pentagon">
+                    <span class="pentagon-text">+2%</span>
+                    <p class="result-title">Lorem ipsum dolor</p>
+                </div>
+            </div>
+            <div class="result-item">
+                <div class="pentagon">
+                    <span class="pentagon-text">+2%</span>
+                    <p class="result-title">Lorem ipsum dolor</p>
+                </div>
+            </div>
+            <div class="result-item">
+                <div class="pentagon">
+                    <span class="pentagon-text">+2%</span>
+                    <p class="result-title">Lorem ipsum dolor</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- contact us section -->
+<section class="contact-us">
+    <div class="container">
+        <h2 class="section-title">Contact us</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" placeholder="Your message" required></textarea>
+            </div>
+            <button type="submit" class="cta-button">Call to Action</button>
+        </form>
+    </div>
+</section>
+</body>
+</html>
